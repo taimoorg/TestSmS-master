@@ -2,7 +2,6 @@
 Public Class apiStudent
     Inherits System.Web.UI.Page
 
-
     <WebMethod()> _
     Public Shared Function P_Student_IU(St_ID As Integer, St_Name As String, St_DOB As String, ST_Gender As String) As Integer
         Return StudentDataProvider.P_Student_IU(New StudentInfo(St_ID, St_Name, St_DOB, ST_Gender))
