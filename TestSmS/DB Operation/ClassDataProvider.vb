@@ -18,4 +18,9 @@ Public Class ClassDataProvider
         Return CType(objDatabase.ExecuteDataSet("P_Class_GetAll"), DataSet).Tables(0)
     End Function
 
+    Public Shared Sub P_Class_Delete(Class_ID As Integer)
+        Dim objDatabase As Database
+        objDatabase = DatabaseFactory.CreateDatabase()
+        objDatabase.ExecuteNonQuery("P_Class_Delete", Class_ID)
+    End Sub
 End Class
