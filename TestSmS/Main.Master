@@ -35,7 +35,7 @@
                 <li><a href="Index.aspx">Main Page</a></li>
                 <li><a href="Student.aspx">Student</a></li>
                 <li><a href="Class.aspx">Class</a></li>
-                <li><a href="#">Download</a></li>
+                <li><a href="#">Teacher</a></li>
                 <li><a href="#">Contact</a>
                     <ul>
                         <li><a href="#">Information</a></li>
