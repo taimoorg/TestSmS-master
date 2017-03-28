@@ -7,11 +7,11 @@ Public Class apiStudent
         Return StudentDataProvider.P_Student_IU(New StudentInfo(St_ID, St_Name, St_DOB, St_Gender))
     End Function
 
-    '<WebMethod()> _
-    'Public Shared Function P_Student_Delete(St_ID As Integer) As Integer
-    '    StudentDataProvider.P_Student_Delete(St_ID)
-    '    Return 1
-    'End Function
+    <WebMethod()> _
+    Public Shared Function P_Student_Delete(St_ID As Integer) As Integer
+        StudentDataProvider.P_Student_Delete(St_ID)
+        Return 1
+    End Function
 
     '<WebMethod()> _
     'Public Shared Function P_Student_GetBy_Id(St_ID As Integer) As StudentInfo
