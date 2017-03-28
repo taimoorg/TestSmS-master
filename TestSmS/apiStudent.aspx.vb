@@ -13,19 +13,19 @@ Public Class apiStudent
     '    Return 1
     'End Function
 
-    <WebMethod()> _
-    Public Shared Function P_Student_GetBy_Id(St_ID As Integer) As StudentInfo
-        Dim Ret As New StudentInfo
-        Dim Dr As DataRow
-        Dr = StudentDataProvider.P_Student_GetBy_Id(St_ID)
-        With Ret
-            .St_ID = Dr.Item("St_ID")
-            .St_Name = Dr.Item("St_Name")
-            .St_DOB = Dr.Item("St_DOB")
-            .ST_Gender = Dr.Item("ST_Gender")
-        End With
-        Return Ret
-    End Function
+    '<WebMethod()> _
+    'Public Shared Function P_Student_GetBy_Id(St_ID As Integer) As StudentInfo
+    '    Dim Ret As New StudentInfo
+    '    Dim Dr As DataRow
+    '    Dr = StudentDataProvider.P_Student_GetBy_Id(St_ID)
+    '    With Ret
+    '        .St_ID = Dr.Item("St_ID")
+    '        .St_Name = Dr.Item("St_Name")
+    '        .St_DOB = Dr.Item("St_DOB")
+    '        .ST_Gender = Dr.Item("ST_Gender")
+    '    End With
+    '    Return Ret
+    'End Function
 
     <WebMethod()> _
     Public Shared Function GetTable() As String
