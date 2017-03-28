@@ -35,7 +35,6 @@ Public Class apisClass
             HtmlTable.Append("<tr>")
             HtmlTable.Append(String.Format("<td>{0}</td>", dt.Rows(i)("Class_Name")))
 
-
             HtmlTable.Append(String.Format("<td><a href='javascript:Del_Record({0});'style ='color:#CC0000'>Delete</a></td>", dt.Rows(i)("Class_ID")))
             HtmlTable.Append("</tr>")
         Next
