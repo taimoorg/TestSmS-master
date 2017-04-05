@@ -179,11 +179,7 @@
                 <label for="radio_2">Female</label>
             </div>
         </div>
-
         <br />
-
         <div id="Gettbl"></div> <br />
-
-
     </form>
 </asp:Content>
