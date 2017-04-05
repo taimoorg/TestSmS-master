@@ -13,7 +13,7 @@ Public Class StudentDataProvider
     Public Shared Function P_Student_IU(obj As StudentInfo) As Integer
         Dim objDatabase As Database
         objDatabase = DatabaseFactory.CreateDatabase()
-        Return CType(objDatabase.ExecuteDataSet("P_Student_IU", obj.St_ID, obj.St_Name, obj.St_DOB, obj.ST_Gender), DataSet).Tables(0).Rows(0).Item(0)
+        Return CType(objDatabase.ExecuteDataSet("P_Student_IU", obj.St_ID, obj.St_Name, obj.St_DOB, obj.ST_Gender, obj.Class_ID), DataSet).Tables(0).Rows(0).Item(0)
     End Function
 
     Public Shared Sub P_Student_Delete(St_ID As Integer)

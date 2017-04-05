@@ -11,7 +11,8 @@
         $(document).ready(function () {
             SetDialog();
             FillTable();
-        });
+            DropDownList();
+       });
 
         function FillTable() {
             $.ajax({
@@ -47,7 +48,7 @@
                 },
             });
         }
-
+       
         function SaveData() {
             var gender;
             if ($("#radio_1").prop("checked")) {
@@ -59,7 +60,7 @@
             $.ajax({
                 type: "POST",
                 url: "apiStudent.aspx/P_Student_IU",
-                data: '{St_ID: ' + $("#id").html() + ',St_Name:"' + $("#txtName").val() + '",St_DOB:"' + $("#txtDOB").val() + '",ST_Gender:"' + gender + '"}',
+                data: '{St_ID: ' + $("#id").html() + ',St_Name:"' + $("#txtName").val() + '",St_DOB:"' + $("#txtDOB").val() + '",ST_Gender:"' + gender + '",Class_ID:"' + $("[id$=ddlClass]").val() + '"}',
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 beforeSend: function () { $('#overlay').show(); },
@@ -85,6 +86,7 @@
             $("#txtName").val("");
             $("#txtDOB").datepicker().val("");
             $("#radio_1").prop("checked", true);
+            $("#ddlClass").val("");
 
             editdialog.dialog("open");
         }
@@ -113,7 +115,7 @@
                     $('#overlay').hide();
                     $("#id").html(response.d.St_ID);
                     $("#txtName").val(response.d.St_Name); // RETURNED THE SAME RECORD WHICH WAS INSERTED AT NEW EMPLOYEE
-                    $("#txtDOB").val(response.d.St_DOB).datepicker(); 
+                    $("#txtDOB").val(response.d.St_DOB).datepicker();
 
                     editdialog.dialog("open");
                 },
@@ -128,31 +130,60 @@
             });
         }
 
+        // INNER DROP DOWN LIST
+        function DropDownList() {
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "apisClass.aspx/ClassDropDownList",
+                data: "{}",
+                dataType: "json",
+                success: function (Result) {
+                    Result = Result.d;
+                    $.each(Result, function (key, value) {
+                        $("[id$=ddlClass]").append($("<option></option>").val
+                        (value.Class_ID).html(value.Class_Name));
+                    });
+                },
+                error: function (Result) {
+                    alert("Error");
+                }
+            });
+        }
 
     </script>
 
     <%--............................................................Body Part............................................................................--%>
-    <div>
-        <button style="height: 40px; width: 140px; font-size: 18px" type="button" onclick="AddStudent();return false;">Add Student </button>
-    </div>
-    <br />
-    <div id="dialog" style="display: none">
-        <b>Id:</b> <span id="id"></span>
-        <br />
-        <b>Student Name:</b>
-        <input id="txtName" type="text" /><br />
-        <b>DOB:</b>
-        <input id="txtDOB" type="text" /><br />
-        <b>Gender:</b>
-        <div id="Radio">
-            <input type='radio' id='radio_1' name='type' value='1' />
-            <label for="radio_1">Male</label>
-            <input type='radio' id='radio_2' name='type' value='2' />
-            <label for="radio_2">Female</label>
+
+    <form id="form1" runat="server">
+
+        <div>
+            <button style="height: 40px; width: 140px; font-size: 18px" type="button" onclick="AddStudent();return false;">Add Student </button>
         </div>
         <br />
-    </div>
+        <div id="dialog" style="display: none">
+            <b>Id:</b> <span id="id"></span>
+            <br />
+            <b>Student Name:</b>
+            <input id="txtName" type="text" /><br />
+            <b>DOB:</b>
+            <input id="txtDOB" type="text" /><br />
+            <b>Select Class:</b>
+            <asp:DropDownList ID="ddlClass" runat="server" Width="160px" />
+            <br />
+            <b>Gender:</b>
+            <div id="Radio">
+                <input type='radio' id='radio_1' name='type' value='1' />
+                <label for="radio_1">Male</label>
+                <input type='radio' id='radio_2' name='type' value='2' />
+                <label for="radio_2">Female</label>
+            </div>
+        </div>
 
-    <div id="Gettbl"></div>
+        <br />
 
+        <div id="Gettbl"></div> <br />
+
+
+    </form>
 </asp:Content>
