@@ -162,12 +162,14 @@
         </div>
         <br />
         <div id="dialog" style="display: none">
-            <b>Id:</b> <span id="id"></span>
+            <b>id:</b> <span id="id"></span>
+           <%-- <input id ="id" type ="hidden" /> --%>
             <br />
             <b>Student Name:</b>
             <input id="txtName" type="text" /><br />
             <b>DOB:</b>
             <input id="txtDOB" type="text" /><br />
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <b>Select Class:</b>
             <asp:DropDownList ID="ddlClass" runat="server" Width="160px" />
             <br />

@@ -42,5 +42,21 @@ Public Class apisClass
         Return HtmlTable.ToString()
     End Function
 
+    <WebMethod()> _
+    Public Shared Function ClassDropDownList() As List(Of ClassInfo)
+        Dim dt As DataTable
+        Dim objClass As New List(Of ClassInfo)()
+        dt = ClassDataProvider.P_Class_GetAll()
+        If dt.Rows.Count > 0 Then
+            For i As Integer = 0 To dt.Rows.Count - 1
+                objClass.Add(New ClassInfo() With { _
+                             .Class_ID = Convert.ToInt32(dt.Rows(i)("Class_ID")), _
+                             .Class_Name = dt.Rows(i)("Class_Name").ToString() _
+                             })
+            Next
+        End If
+        Return objClass
+    End Function
+
 
 End Class

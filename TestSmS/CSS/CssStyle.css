@@ -35,10 +35,11 @@
    font-size :18px; 
 }
 
-#contentArea{
-    padding-left :20px;
+#contentArea{-
+din
     padding-top :1px;
-    border-width: 1px;
+    background-color :#CCC;
+    margin-bo
     background-color :#CCC;
     margin-bottom :10px;
 }

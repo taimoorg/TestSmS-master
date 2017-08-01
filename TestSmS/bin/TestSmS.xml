@@ -6,15 +6,7 @@ TestSmS
 </name>
 </assembly>
 <members>
-<member name="F:TestSmS.apiStudent.form1">
-	<summary>
-form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:TestSmS.Main.head">
+<member name="F:TestSmS.Main.head">
 	<summary>
 head control.
 </summary>
@@ -25,6 +17,46 @@ To modify move field declaration from designer file to code-behind file.
 </member><member name="F:TestSmS.Main.MainContent">
 	<summary>
 MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TestSmS.apiStudent.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TestSmS.Student.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TestSmS.Student.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TestSmS.Student.ddlClass">
+	<summary>
+ddlClass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TestSmS.apisClass.form1">
+	<summary>
+form1 control.
 </summary>
 	<remarks>
 Auto-generated field.
