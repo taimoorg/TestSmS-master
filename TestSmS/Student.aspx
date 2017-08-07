@@ -154,12 +154,11 @@
     </script>
 
     <%--............................................................Body Part............................................................................--%>
-
+     <div>
+            <button class="btn btn-primary" type="button" onclick="AddStudent();return false;">Add Student </button>
+        </div>
     <form id="form1" runat="server">
 
-        <div>
-            <button style="height: 40px; width: 140px; font-size: 18px" type="button" onclick="AddStudent();return false;">Add Student </button>
-        </div>
         <br />
         <div id="dialog" style="display: none">
             <b>id:</b> <span id="id"></span>
@@ -169,7 +168,7 @@
             <input id="txtName" type="text" /><br />
             <b>DOB:</b>
             <input id="txtDOB" type="text" /><br />
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            
             <b>Select Class:</b>
             <asp:DropDownList ID="ddlClass" runat="server" Width="160px" />
             <br />

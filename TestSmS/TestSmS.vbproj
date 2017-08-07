@@ -96,37 +96,65 @@
     <Content Include="apisClass.aspx" />
     <Content Include="apiStudent.aspx" />
     <Content Include="Class.aspx" />
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="CSS\CssStyle.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\chocolat.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="image\air.jpg" />
-    <Content Include="image\banner.jpg" />
-    <Content Include="image\logo1.jpg" />
-    <Content Include="image\mar.jpg" />
-    <Content Include="image\mar1.jpg" />
-    <Content Include="image\mar2.jpg" />
-    <Content Include="image\marc.jpg" />
-    <Content Include="image\school.jpg" />
-    <Content Include="image\school1.jpg" />
+    <Content Include="images\a1.jpg" />
+    <Content Include="images\a2.jpg" />
+    <Content Include="images\a3.jpg" />
+    <Content Include="images\a4.jpg" />
+    <Content Include="images\a5.jpg" />
+    <Content Include="images\a6.jpg" />
+    <Content Include="images\a7.jpg" />
+    <Content Include="images\ab.jpg" />
+    <Content Include="images\ab1.jpg" />
+    <Content Include="images\ab2.jpg" />
+    <Content Include="images\ab3.jpg" />
+    <Content Include="images\b1.jpg" />
+    <Content Include="images\b2.jpg" />
+    <Content Include="images\b3.jpg" />
+    <Content Include="images\b4.jpg" />
+    <Content Include="images\b5.jpg" />
+    <Content Include="images\b6.jpg" />
+    <Content Include="images\ba.jpg" />
+    <Content Include="images\ba1.jpg" />
+    <Content Include="images\ba2.jpg" />
+    <Content Include="images\ba3.png" />
+    <Content Include="images\bt.jpg" />
+    <Content Include="images\bt1.jpg" />
+    <Content Include="images\close.png" />
+    <Content Include="images\img-sprite.png" />
+    <Content Include="images\left.png" />
+    <Content Include="images\link.png" />
+    <Content Include="images\menu.png" />
+    <Content Include="images\plus1.png" />
+    <Content Include="images\right.png" />
+    <Content Include="images\si.jpg" />
+    <Content Include="images\si.png" />
+    <Content Include="images\ta.jpg" />
+    <Content Include="images\ta1.jpg" />
+    <Content Include="images\ta2.jpg" />
+    <Content Include="images\ta3.jpg" />
+    <Content Include="images\ta4.jpg" />
+    <Content Include="images\ta5.jpg" />
+    <Content Include="images\ta6.jpg" />
+    <Content Include="images\ta7.jpg" />
+    <Content Include="images\ta8.jpg" />
+    <Content Include="images\team-1.jpg" />
+    <Content Include="images\team-2.jpg" />
+    <Content Include="images\team-3.jpg" />
     <Content Include="Index.aspx" />
+    <Content Include="js\easyResponsiveTabs.js" />
+    <Content Include="js\jquery.chocolat.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.hoverdir.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\modernizr.custom.97074.js" />
     <Content Include="Main.Master" />
     <Content Include="packages.config" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Student.aspx" />
     <Content Include="Teacher.aspx" />
     <Content Include="Web.config">
@@ -219,6 +247,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\nobile.ttf" />
+    <Content Include="fonts\Philosopher-Bold.ttf" />
+    <Content Include="fonts\Philosopher-Regular.ttf" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -228,7 +263,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

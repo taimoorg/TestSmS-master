@@ -4,58 +4,165 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8" />
-    <title>School System</title>
+    <title>School System | Home</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Games Park Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--flexslider-->
+    <link href="css/flexslider.css" rel="stylesheet"  type="text/css" media="screen"  />
+  
+    <!--//flexslider-->
+    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion           
+                width: 'auto', //auto or any width like 600px
+                fit: true   // 100% fit in a container
+            });
+        });
 
-    <link href="CSS/CssStyle.css" rel="stylesheet" type="text/css"  />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
-    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/start/jquery-ui.css" rel="stylesheet" type="text/css" />
+    </script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
 </head>
 <body>
-    <%-- HEADER AREA START--%>
-    <div class="Container">
-        <div id="logo">
-            <img src="image/logo1.jpg" />
-        </div>
-        <div id="banner">
-            <img src="image/banner.jpg" />
+    <!--header-->
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="head-top">
+                    <div class="logo">
+                        <h1><a href="index.html">Games  <span>Park</span></a></h1>
+                    </div>
+                    <div class="top-nav">
+                        <span class="menu">
+                            <img src="images/menu.png" alt=""/>
+                        </span>
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="typo.html">Events</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+
+                        <!--script-->
+                        <script>
+                            $("span.menu").click(function () {
+                                $(".top-nav ul").slideToggle(500, function () {
+                                });
+                            });
+                        </script>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <br />
-    <%-- HEADER AREA END--%>
 
-    <div class="row">
-        <nav>
-            <ul class="nav">
-                <li><a href="Index.aspx">Main Page</a></li>
-                <li><a href="Student.aspx">Student</a></li>
-                <li><a href="Class.aspx">Class</a></li>
-                <li><a href="Teacher.aspx">Teacher</a></li>
-                <li><a href="#">Contact</a>
-                    <ul>
-                        <li><a href="#">Information</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <br />
+    <!--banner-->
+<div class="banner">
+	<div class="container">
+		<h2>Our Pictures</h2>	
+		 <div class="banner-matter">
+           	 <div class="slider">
+                  <section class="slider">
+                      <div class="flexslider">
+	                      <ul class="slides">
+	                      <li>
+		                      <div class="ban">					                	 
+								 <div class=" ban-in ban-grid">
+									<img class="img-responsive " src="images/ba.jpg" alt="" />  
+								 </div>
+								<div class=" ban-in ban-grid1">
+									<img class="img-responsive" src="images/ba1.jpg" alt="" />  
+								 </div>
+								 <div class=" ban-in ban-grid2">
+									<img class="img-responsive " src="images/ba2.jpg" alt="" />  
+								</div>
+								<div class=" ban-in ban-grid3">
+									<img class="img-responsive " src="images/ba3.jpg" alt="" />  
+								</div>
+								<div class="clearfix"> </div>										
+							</div>
+  	    				</li>
+ 	    				 <li>
+		                      <div class="ban">					                	 
+								 <div class=" ban-in ban-grid">
+									<img class="img-responsive " src="images/ba.jpg" alt="" />  
+								 </div>
+								<div class=" ban-in ban-grid1">
+									<img class="img-responsive" src="images/ba1.jpg" alt="" />  
+								 </div>
+								 <div class=" ban-in ban-grid2">
+									<img class="img-responsive " src="images/ba2.jpg" alt="" />  
+								</div>
+								<div class=" ban-in ban-grid3">
+									<img class="img-responsive " src="images/ba3.jpg" alt="" />  
+								</div>
+								<div class="clearfix"> </div>										
+							</div>
+  	    				</li>
+  	    				 <li>
+		                      <div class="ban">					                	 
+								 <div class=" ban-in ban-grid">
+									<img class="img-responsive " src="images/ba.jpg" alt="" />  
+								 </div>
+								<div class=" ban-in ban-grid1">
+									<img class="img-responsive" src="images/ba1.jpg" alt="" />  
+								 </div>
+								 <div class=" ban-in ban-grid2">
+									<img class="img-responsive " src="images/ba2.jpg" alt="" />  
+								</div>
+								<div class=" ban-in ban-grid3">
+									<img class="img-responsive " src="images/ba3.jpg" alt="" />  
+								</div>
+								<div class="clearfix"> </div>										
+							</div>
+  	    				</li>
+         			 </ul>
+        		</div>
+     		 </section>
+			  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+			  <!--FlexSlider-->
+			  <script defer src="js/jquery.flexslider.js"></script>
+			  <script type="text/javascript">
+			      $(function () {
+			          SyntaxHighlighter.all();
+			      });
+			      $(window).load(function () {
+			          $('.flexslider').flexslider({
+			              animation: "slide",
+			              start: function (slider) {
+			                  $('body').removeClass('loading');
+			              }
+			          });
+			      });
+			  </script>
 
-    <div id="contentArea">
-        <asp:ContentPlaceHolder ID="MainContent" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
-
-<%--    <div id="footer">
-        <div>
-            <h2>Footer</h2>
-        </div>
-    </div>--%>
+			 </div>
+		</div>	
+	</div>
+</div>
+    
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
 
 </body>
 </html>
