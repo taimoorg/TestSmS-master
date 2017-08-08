@@ -1,8 +1,71 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Main.Master" CodeBehind="Student.aspx.vb" Inherits="TestSmS.Student" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>School System | Student</title>
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="head-top">
+                    <div class="logo">
+                        <h1><a href="Index.aspx">Games  <span>Park</span></a></h1>
+                    </div>
+                    <div class="top-nav">
+                        <span class="menu">
+                            <img src="images/menu.png" alt="" />
+                        </span>
+                        <ul>
+                            <li><a href="Index.aspx">Home</a></li>
+                            <li class="active"><a href="Student.aspx">Student</a></li>
+                            <li><a href="Teacher.aspx">Teacher  </a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                           
+                        </ul>
+
+                        <!--script-->
+                        <script>
+                            $("span.menu").click(function () {
+                                $(".top-nav ul").slideToggle(500, function () {
+                                });
+                            });
+                        </script>
+
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div class="contact">
+        <div class="container">
+            <div class="contact-grids">
+                <h3>Add New Student</h3>
+                <br />
+                <div class="col-md-6 contact-form">
+                    <form>
+                        <div class="contact-bottom">
+                            <input type="text" placeholder="Name"/>
+                            <input type="text" placeholder="Email"/>
+                            <input type="text" placeholder="Phonenumber"/>
+                            <textarea placeholder="Message" required=""></textarea>
+                            <input type="submit" value="Send"/>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="clearfix"></div>
+
+            </div>
+        </div>
+    </div>
+    <!--//content-->
+
+
 
 
     <script type="text/javascript">
@@ -12,7 +75,7 @@
             SetDialog();
             FillTable();
             DropDownList();
-       });
+        });
 
         function FillTable() {
             $.ajax({
@@ -48,7 +111,7 @@
                 },
             });
         }
-       
+
         function SaveData() {
             var gender;
             if ($("#radio_1").prop("checked")) {
@@ -154,21 +217,21 @@
     </script>
 
     <%--............................................................Body Part............................................................................--%>
-     <div>
-            <button class="btn btn-primary" type="button" onclick="AddStudent();return false;">Add Student </button>
-        </div>
+    <div>
+       
+    </div>
     <form id="form1" runat="server">
 
         <br />
         <div id="dialog" style="display: none">
             <b>id:</b> <span id="id"></span>
-           <%-- <input id ="id" type ="hidden" /> --%>
+            <%-- <input id ="id" type ="hidden" /> --%>
             <br />
             <b>Student Name:</b>
             <input id="txtName" type="text" /><br />
             <b>DOB:</b>
             <input id="txtDOB" type="text" /><br />
-            
+
             <b>Select Class:</b>
             <asp:DropDownList ID="ddlClass" runat="server" Width="160px" />
             <br />
@@ -181,6 +244,7 @@
             </div>
         </div>
         <br />
-        <div id="Gettbl"></div> <br />
+        <div id="Gettbl"></div>
+        <br />
     </form>
 </asp:Content>
